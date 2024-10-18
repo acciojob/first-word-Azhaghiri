@@ -1,6 +1,8 @@
 function firstWord(s) {
   // your code here
-	return s.split(" ")[0];
+	 const firstWord = s.trim().split(/\s+/)[0];
+    return firstWord.charAt(0).toUpperCase() + firstWord.slice(1);
+
 }
 
 // Do not change the code below
